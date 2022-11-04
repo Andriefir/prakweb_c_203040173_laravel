@@ -6,9 +6,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link {{ ($title === "Home") ? 'active' : '' }}" href="/">Home</a>
-                    <a class="nav-link {{ ($title === "Home") ? 'active' : '' }}" href="/about">About</a>
-                    <a class="nav-link {{ ($title === "Home") ? 'active' : '' }}" href="/blog">Blog</a>
+                    <a class="nav-link {{ ($active === "Home") ? 'active' : '' }}" href="/">Home</a>
+                    <a class="nav-link {{ ($active === "About") ? 'active' : '' }}" href="/about">About</a>
+                    <a class="nav-link {{ ($active === "Posts") ? 'active' : '' }}" href="/blog">Blog</a>
+                    <a class="nav-link {{ ($active === "Categories") ? 'active' : '' }}" href="/categories">Categories</a>
                 </div>
                 </div>
             </div>
